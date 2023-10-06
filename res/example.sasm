@@ -1,0 +1,50 @@
+.sumfunc:
+	tmp a b
+	sum a b
+	ret $pop
+;
+.looptest:
+	stv count 1
+	out count
+	inc count
+	exc count > 10 &
+	ret count
+	lpp
+;
+
+.looptest2:
+	stv count 1
+	out count
+	inc count
+	exc count > 10 &
+	brk
+	lpp
+;
+
+.main:
+	jmp looptest
+
+	psh 100
+	check
+
+	ptr aptr
+	pget aptr
+	out
+
+	psh 123
+	pset aptr
+	out
+
+	check
+	addr
+	out
+
+	dref 0
+	out
+
+	jmp looptest2
+
+	reg pp
+	gip pp testVar
+	out pp
+;
