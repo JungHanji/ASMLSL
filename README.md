@@ -6,7 +6,7 @@
 
 ### Как компилировать *.asmlsl код?
 ```bash
-./asmlsl example.als
+./asmlsl example.asmlsl
 ```
 ### Как скомпилировать компилятор?
 ```bash
