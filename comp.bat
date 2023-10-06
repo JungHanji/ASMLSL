@@ -1,1 +1,1 @@
-g++ -std=c++23 -o sasm main.cpp -I src/include -w
+g++ -std=c++23 -o asmlsl main.cpp -I src/include -w
